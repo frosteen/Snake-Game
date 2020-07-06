@@ -1,7 +1,7 @@
 #MADE_BY_PAMBID
 #SNAKE_GAME_V2
 
-import msvcrt
+import keyboard
 import os
 import time
 import random
@@ -115,17 +115,16 @@ class Game:
         return self.score
     def __init__(self):
         os.system('mode con: cols='+str(self.width)+' lines='+str(self.height+3))
-        while True: 
-            if msvcrt.kbhit():
-                      key = msvcrt.getch()
-                      if key == b'w' and self.snake_move != "DOWN":
-                          self.snake_move = "UP"
-                      if key == b'a' and self.snake_move != "RIGHT":
-                          self.snake_move = "LEFT"
-                      if key == b's' and self.snake_move != "UP":
-                          self.snake_move = "DOWN"
-                      if key == b'd' and self.snake_move != "LEFT":
-                          self.snake_move = "RIGHT"
+        while True:
+            key = None
+            if keyboard.is_pressed("up") and self.snake_move != "DOWN":
+              self.snake_move = "UP"
+            if keyboard.is_pressed("left") and self.snake_move != "RIGHT":
+              self.snake_move = "LEFT"
+            if keyboard.is_pressed("down") and self.snake_move != "UP":
+              self.snake_move = "DOWN"
+            if keyboard.is_pressed("right") and self.snake_move != "LEFT":
+              self.snake_move = "RIGHT"
             os.system("cls")            
             self.move()
             self.set_board()
