@@ -1,10 +1,13 @@
 # Snake-Game
 
-## How to Play?
-```sh
+## Installation
+```
     pip install -r requirements.txt
     python Snake_Game_V2.py
 ```
+
+## How to Play?
+1. Use Arrow Keys to Control the Snake.
 
 ![SnakeGame](SnakeGame.png)
 
