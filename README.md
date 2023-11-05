@@ -1,10 +1,12 @@
 # Snake-Game
 
-How to Play?
+## How to Play?
 ```sh
     pip install -r requirements.txt
-    python3 Snake_Game_V2.py
+    python Snake_Game_V2.py
 ```
+
+![SnakeGame](SnakeGame.png)
 
 ## Tip
 **If you liked my hard work, I would really appreciate if you can buy some coffee for me.**
