@@ -2,7 +2,8 @@
 A visual game of snake by using python's print function.
 
 ## Installation
-```
+```bash
+# Executed on Python3.7.8
 pip install -r requirements.txt
 python Snake_Game_V2.py
 ```
