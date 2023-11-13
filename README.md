@@ -2,8 +2,8 @@
 
 ## Installation
 ```
-    pip install -r requirements.txt
-    python Snake_Game_V2.py
+pip install -r requirements.txt
+python Snake_Game_V2.py
 ```
 
 ## How to Play?
